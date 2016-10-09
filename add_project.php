@@ -23,7 +23,7 @@
 
             <ul class="mdl-list">
               <div class="description-header">
-                プロジェクトの名前を決めます
+                まず、プロジェクトの名前を決めます。
               </div>
               <li class="mdl-list__item">
                 <span class="mdl-list__item-primary-content mdl-textfield mdl-js-textfield">
@@ -33,7 +33,7 @@
               </li>
 
               <div class="description-header">
-                プロジェクトの概要を書きます
+                次に、プロジェクトの概要を書きます。
               </div>
               <li class="mdl-list__item">
                 <span class="mdl-list__item-primary-content mdl-textfield mdl-js-textfield">
@@ -43,7 +43,7 @@
               </li>
 
               <div class="description-header">
-                プロジェクトのメンバーを決めます
+                最後に、プロジェクトのメンバーを決めます。
               </div>
               <li class="mdl-list__item">
                 <ul class="demo-list-icon mdl-list">

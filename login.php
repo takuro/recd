@@ -4,33 +4,41 @@
   require_once 'php/global_html_header.php'
 ?>
 
-<main class="mdl-layout__content mdl-color--grey-100 login-main">
+<main class="mdl-layout__content mdl-color--grey-100">
   <div class="mdl-grid">
+    <div id="login-page-main" class="mdl-shadow--2dp mdl-cell mdl-cell--12-col content">
+      <h1>メンバの決定をサポート</h1>
+      <div class="mdl-textfield mdl-js-textfield">
+        <p>独自の推薦システムでプロジェクトメンバを探します。</p>
+      </div>
+    </div>
 
-    <div id="login-signup-form" class="mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--12-col content">
+    <div id="login-signup-form" class="mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--6-col content">
       <div id="login-form">
-        <h2 class="mdl-card__title-text">Login</h2>
+        <h2 class="mdl-card__title-text">ログイン</h2>
         <form method="POST" action="">
-          <span class="mdl-textfield mdl-js-textfield">
+          <div class="mdl-textfield mdl-js-textfield">
             <input class="mdl-textfield__input" type="text" name="uname" id="uname" />
             <label class="mdl-textfield__label" for="uname">ユーザ名</label>
-          </span>
+          </div>
 
-          <span class="mdl-textfield mdl-js-textfield">
+          <div class="mdl-textfield mdl-js-textfield">
             <input type="password" name="password" id="password" class="mdl-textfield__input" />
             <label class="mdl-textfield__label" for="password">パスワード</label>
-          </span>
+          </div>
           
-          <span>
+          <div>
             <input type="submit" name="login" value="Login" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" />
-          </span>
+          </div>
 
         </form>
       </div>
+    </div>
 
-      <?php if (ALLOW_NEW_USER) { ?>
+    <?php if (ALLOW_NEW_USER) { ?>
+    <div id="login-signup-form" class="mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--6-col content">
         <div id="signup-form">
-          <h2 class="mdl-card__title-text">New to <?php echo SITE_NAME; ?>?</h2>
+          <h2 class="mdl-card__title-text">新規登録しますか？</h2>
           <form method="POST" action="">
             <span class="mdl-textfield mdl-js-textfield">
               <input class="mdl-textfield__input" type="text" name="new-uname" id="new-uname" />
@@ -43,8 +51,8 @@
             <input type="submit" name="signup" value="Sign up for <?php echo SITE_NAME; ?>" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" />
           </form>
         </div>
-      <?php } ?>
     </div>
+    <?php } ?>
 
   </div>
 </main>

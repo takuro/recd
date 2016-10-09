@@ -19,6 +19,7 @@ class User {
   public function signup($data) {
     if (!Validate::signup_data($data)) {
       Response::go_to_login_form();
+      return false;
     }
 
     // add user
@@ -45,6 +46,7 @@ class User {
 
     if (!Validate::login_data($data)) {
       Response::go_to_login_form();
+      return false;
     }
 
     $r = $this->find_by_uname($data['uname']);

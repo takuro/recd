@@ -1,10 +1,24 @@
-#login-signup-form {
-  padding: 80px;
+#login-page-main {
+  background: url('../images/top.jpg') 0 0 no-repeat #7f9cc8;
+  background-size: contain;
+  background-position: right bottom;
+  min-height: 450px;
+  color: #FFF;
+  } #login-page-main p {
+    font-size: 1em;
 }
 
 #login-form,
-#signup-form {
-  padding: 50px 0;
+#signup-form,
+#login-page-main
+{
+  padding: 40px;
+}
+
+#login-form .mdl-textfield,
+#signup-form .mdl-textfield
+{
+  width: 100%;
 }
 
 .add-button {
@@ -43,9 +57,6 @@
   background-position: right bottom;
 }
 
-#project-history  .work-name {
-}
-
 .mdl-dialog {
   width: 500px;
 }
@@ -53,3 +64,4 @@
 #recommend-user-area {
   display: none;
 }
+
