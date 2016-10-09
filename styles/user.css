@@ -1,0 +1,55 @@
+#login-signup-form {
+  padding: 80px;
+}
+
+#login-form,
+#signup-form {
+  padding: 50px 0;
+}
+
+.add-button {
+  font-size: 5em;
+  padding: 75px;
+  font-weight: 100;
+}
+
+.description-header {
+  margin-left: 15px;
+  color: #777;
+}
+
+#global-header a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.member-list-icon {
+  margin: 0 10px 0 0 ;
+}
+
+#member-history .mdl-card__title-text {
+  font-size: 1em;
+}
+
+#member-history p {
+  margin: 25px 0 5px 0;
+  text-align: right;
+}
+
+#member-history  .member-name {
+  color: #fff;
+  background: url('../images/face.svg') no-repeat #03a9f4;
+  background-size: contain;
+  background-position: right bottom;
+}
+
+#project-history  .work-name {
+}
+
+.mdl-dialog {
+  width: 500px;
+}
+
+#recommend-user-area {
+  display: none;
+}
