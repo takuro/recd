@@ -1,11 +1,13 @@
 #login-page-main {
-  background: url('../images/top.jpg') 0 0 no-repeat #7f9cc8;
+  background: url('../images/top.jpg') 0 0 no-repeat #fbfcff;
   background-size: contain;
-  background-position: right bottom;
+  background-position: 90% bottom;
   min-height: 450px;
-  color: #FFF;
+  color: #000;
   } #login-page-main p {
-    font-size: 1em;
+    font-size: 1.3em;
+  } #login-page-main h1 {
+    font-weight: bold;
 }
 
 #login-form,
@@ -63,5 +65,17 @@
 
 #recommend-user-area {
   display: none;
+}
+
+.visual-score {
+  margin-left: 20px;
+  font-size: 1em;
+  color: #777;
+  } .visual-score .now-score{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ff4081;
+  } .visual-score .max-score{
+    font-size: 0.9em;
 }
 

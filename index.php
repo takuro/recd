@@ -62,15 +62,24 @@
               <div class="mdl-card__supporting-text mdl-color-text--grey-600">
                 "<?php echo $p['name']; ?>" で一緒でした。
               </div>
-              <div class="mdl-card__actions mdl-card--border">
+              <div class="member-rate mdl-card__actions mdl-card--border">
                 <div class="mdl-card__title">
                   <span class="mdl-card__title-text mdl-color-text--grey-600">
                     この人の評価
                   </span>
+                  <div class="visual-score">
+                    <span class="now-score">
+                      <?php echo $rate; ?>
+                    </span>
+                    /
+                    <span class="max-score">
+                      4
+                    </span>
+                  </div>
                 </div>
                 <form action="" method="POST">
                   <p>
-                  <input class="mdl-slider mdl-js-slider" type="range" name="input-rate" id="input-rate" min="0" max="4" value="<?php echo $rate; ?>" step="1" />
+                    <input class="mdl-slider mdl-js-slider" type="range" name="input-rate" id="input-rate" min="0" max="4" value="<?php echo $rate; ?>" step="1" />
                     <input type="hidden" name="input-rate-member-id" id="input-rate-member-id" value="<?php echo $id ?>" />
                   </p>
                   <p><input type="submit" name="submit-rate" value="評価する" class="mdl-button mdl-js-button" /></p>
